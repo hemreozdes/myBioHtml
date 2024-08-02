@@ -1,0 +1,94 @@
+<!--Hamit Emre Özdeş s27041-->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamit Emre Özdeş</title>
+    <style>
+        #contact:hover, a:hover{
+            color: greenyellow;
+        }
+        body {
+            font-family: Times New Roman;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+        }
+        .profile, .skills, .projects {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .profile:hover, .skills:hover, .projects:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            transition: transform 0.5s;
+        }
+        .profile img:hover {
+            transform: rotate(360deg);
+
+        #contact {
+            margin-top: 20px;
+        }
+        #contact a {
+            text-decoration: none;
+            color: blue;
+        }
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+<!--Yükleme ekrani yapmayi beceremediğim icin internetten hazir kod kullandim.
+    Görünmesi için süre ekleyecektim ancak javascript öğrenmedigim icin koymadim-->
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="container">
+        <div class="profile">
+            <img src="indir.jpeg" alt="Hamit Emre Özdeş"/>
+                <h2>Hamit Emre Özdeş</h2>
+                <p id="contact">📧 <a href="hemreozdes@gmail.com">hemreozdes@gmail.com</a></p>
+                <p id="contact">📞 +90 531 089 6258</p>
+            <p>Merhaba, ben Hamit Emre Özdeş. Kocaeli Üniversitesi Elektronik ve Haberleşme Mühendisliğinde 4.sınıf öğrencisiyim.</p>
+        </div>
+        <div class="skills">
+            <h3>Yetenekler</h3>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C</li>
+            </ul>
+        </div>
+        <div class="projects">
+            <h3>Projeler / Deneyimler</h3>
+            <ul>
+                <li>Rent a car programi</li>
+                <li>Girilen kelimeyi pixel olarak yazdirma</li>
+                <li>HTML profil sayfasi</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
